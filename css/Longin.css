@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Sora:wght@400;700&family=Tajawal:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Raleway:wght@700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@100;300;500&display=swap');
+/* متغيرات */
+:root{
+    --primary:#dc3545;
+    --dark:#21252f;
+    --color: #4f5b6f;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+/* جسم الصفحة */
+
+body {
+    font-family: Sora, "sans-serif";
+}
+
+
+/* رأس الصفحة */
+.navbar{
+    background-color: white !important;
+    font-weight: 900;
+}
+
+
+.navbar .nav-link{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Sora, "sans-serif";
+}
+
+#a-navber{
+    font-family: Sora, "sans-serif";
+    font-size: 25px;
+    color: var(--color);
+}
+
+ul li{
+    margin-right: 20px;
+}
+
+
+#li-Home{
+    color: var(--primary);
+}
+
+#li-Services:hover{
+    color: var(--primary);
+}
+
+#li-Blog:hover{
+    color: var(--primary);
+}
+
+#li-contact:hover{
+    color: var(--primary);
+}
+
+#img-carousel{
+    filter: brightness(50%);
+}
+
+.navbar .logo{
+    width: 160px;
+}
+
+.btn{
+    font-size: 14px;
+    padding: 8px 25px;
+    font-family: sans-serif;
+}
+
+.btn-input{
+    font-size: 18px;
+    padding: 8px 25px;
+    font-family: sans-serif;
+    background-color: #e03a3c;
+    color: white;
+    border: none;
+    width: 19%;
+}
+.btn-input:hover{
+    filter: brightness(80%);
+    color: white;
+    transition: 0.5s;
+}
+
+
+#nav-2{
+    background-color: #f8f9fa !important;
+    font-family: sans-serif;
+    height: 60px;
+}
+
+#li-Home2{
+    font-family: sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+#li-Services2{
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#p-na-1{
+    font-size: 25px !important;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color);
+}
+
+
+
+#p-na-2{
+    margin-left: 50px;
+}
+
+
+#ul-na-2 li a{
+    margin-left: -35px;
+    font-size: 13px !important;
+}
+
+#home-nav{
+    color: var(--primary);
+}
+
+.span{
+    color: var(--color);
+    margin-left: 10px;
+}
+
+
+/* صناديق الادخال */
+
+.longin .form {
+    border-radius: 4px;
+}
+
+.longin .form .form-group {
+    margin-bottom: 25px;
+}
+
+  /* جميع صناديق الادخال */
+  .longin .form input {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px 15px;
+  }
+
+.longin .form input:focus{
+    box-shadow: none;
+    border: solid 1px #e03a3c;
+}
+
+  /* زر الارسال */
+.longin .form button[type=submit] {
+    background: #e03a3c;
+    border: 0;
+    padding: 8px 25px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+/* زر الارسال */
+.longin .form button[type=submit]:hover {
+    background: #e35052;
+}
+
+/* الفوتر */
+/* نهاية الصفحة */
+
+.footer{
+    /* لون النص */
+    color: white;
+
+    /* حجم الخط */
+    font-size: 14px;
+
+    /* لون الخلفية */
+    background: #4a5562;
+}
+
+
+/* الفوتر العلوي */
+.footer .footer-top {
+    padding: 60px 0 30px 0;
+
+    /* لون الخلفية */
+    background: #515d6a;
+}
+
+.footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+/* النص الي داخل الفوتر */
+
+/* عنوان الفوتر الاسم */
+.footer .footer-top .footer-contact h3 {
+
+    /* حجم الخط */
+    font-size: 26px;
+    /* المسافة بين الاسطر */
+    line-height: 1;
+    /*درجة غمقان الخط */
+    font-weight: 700;
+  }
+
+  /* النص الي تحت الاسم */
+
+.footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+}  
+
+
+
+/* وسائل التواصل الاجتماعي */
+.footer .social-links a {
+
+    /* حجم الشكل */
+    font-size: 18px;
+    display: inline-block;
+
+    /* لون الخلفية */
+    background: #636e79;
+
+    /* لون الشكل */
+    color: #fff;
+
+    /* المسافة بين الاسطر */
+    line-height: 1;
+
+
+    padding: 8px 0;
+
+    /* إزاحة لليمين */
+    margin-right: 4px;
+
+    /* إطار */
+    border-radius: 4px;
+
+    text-align: center;
+    
+    /* العرض */
+    width: 36px;
+
+    /* الطول */
+    height: 36px;
+
+    /* مدة الانتقال */
+    transition: 0.3s;
+}
+
+
+.footer .social-links a:hover {
+    background: #e03a3c;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* عنوان اللاينكات */
+.footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* دف اللينكات */
+.footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+/* القائمة */
+
+.footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-links ul a {
+    color: #aaaaaa;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+}
+
+/* تغير لون الكلام عند وضع الماوس عليه */
+
+.footer .footer-top .footer-links ul a:hover{
+    color: white;
+}
+
+
+/* الجزء الرابع من الفوتر  */
+
+/* النص وزر الاشتراك */
+
+
+.footer .footer-newsletter {
+
+    /* حجم الخط */
+    font-size: 15px;
+}
+
+.footer .footer-newsletter h4 {
+    /* حجم الخط */
+    font-size: 16px;
+
+    /* سمك الخط */
+    font-weight: bold;
+
+    position: relative;
+
+    padding-bottom: 12px;
+}
+
+/* الصندوق */
+.footer .footer-newsletter form {
+
+    /* 30 من الاعلى */
+    margin-top: 30px;
+    /* لون الخلفية */
+    background: #fff;
+
+    padding: 5px 10px;
+
+    position: relative;
+    /* إطار */
+    border-radius: 4px;
+    /* الكتابة من اليسار */
+    text-align: left;
+}
+
+
+/* تخصيص نوع الصندوق للنص ايميل */
+.footer .footer-newsletter form input[type=email] {
+    /* لا يوجد اطار */
+    border: 0;
+    padding: 4px 8px;
+    /* العرض */
+    /* الحجم الكلي 100بالمية ناقص 100 بكسل */
+    /* calc تستخدم للدوال الرياضية */
+    width: calc(100% - 100px);
+}
+
+/* الزر */
+
+.footer .footer-newsletter form input[type=submit] {
+    /* يتحرك بحرية */
+    position: absolute;
+    /* من الاعلى 0 */
+    top: 0;
+
+    /* من الجانب الايمن سالب واحد بكسل */
+    right: -1px;
+
+    /* من الاسفل صفر */
+    bottom: 0;
+
+    /* لا يوجد بوردر */
+    border: 0;
+
+    /* لا يوجد لون خلفية */
+    background: none;
+
+    /* حجم الخط */
+    font-size: 16px;
+
+    padding: 0 20px;
+
+    /* لون خلفية بديل */
+    background: #e03a3c;
+
+    /* لون النص */
+    color: #fff;
+
+    /* فترة الانتقال */
+    transition: 0.3s;
+
+    /* إطار  */
+    border-radius: 0 4px 4px 0;
+
+    /* ظل */
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }

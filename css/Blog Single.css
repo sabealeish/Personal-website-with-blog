@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Sora:wght@400;700&family=Tajawal:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Raleway:wght@700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@100;300;500&display=swap');
+/* متغيرات */
+:root{
+    --primary:#dc3545;
+    --dark:#21252f;
+    --color: #4f5b6f;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+/* جسم الصفحة */
+
+body {
+    font-family: Sora, "sans-serif";
+}
+
+
+/* رأس الصفحة */
+.navbar{
+    background-color: white !important;
+    font-weight: 900;
+}
+
+
+.navbar .nav-link{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Sora, "sans-serif";
+}
+
+#a-navber{
+    font-family: Sora, "sans-serif";
+    font-size: 25px;
+    color: var(--color);
+}
+
+ul li{
+    margin-right: 20px;
+}
+
+
+#li-Home{
+    color: var(--primary);
+}
+
+#li-Services:hover{
+    color: var(--primary);
+}
+
+#li-Blog:hover{
+    color: var(--primary);
+}
+
+#li-contact:hover{
+    color: var(--primary);
+}
+
+#img-carousel{
+    filter: brightness(50%);
+}
+
+.navbar .logo{
+    width: 160px;
+}
+
+
+
+.btn{
+    font-size: 14px;
+    padding: 8px 25px;
+    font-family: sans-serif;
+}
+
+
+#nav-2{
+    background-color: #f8f9fa !important;
+    font-family: sans-serif;
+    height: 60px;
+}
+
+#li-Home2{
+    font-family: sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+#li-Services2{
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#p-na-1{
+    font-size: 25px !important;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color);
+}
+
+
+
+
+
+
+#ul-na-2 li a{
+    font-size: 12px !important;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+#ul-na-3 li a{
+    font-size: 12px !important;
+    margin-right: -20px;
+    
+}
+
+#home-nav{
+    color: var(--primary);
+    margin-right: -20px !important;
+}
+
+#home-nav2{
+    color: #9ea1af;
+}
+
+.span{
+    color: var(--color);
+}
+
+/* المقال */
+
+.blog{
+    padding: 40px 0 20px 0;
+}
+
+/* الحاوية*/
+.blog .entry {
+    padding: 30px;
+    margin-bottom: 60px;
+    /* ظل */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+/* اول صورة */
+.blog .entry .entry-img {
+    max-height: 440px;
+    margin: -30px -30px 20px -30px;
+    overflow: hidden;
+}
+
+/* عنوان المقال */
+.blog .entry .entry-title {
+
+    /* حجم الخط */
+    font-size: 28px;
+
+    /* درجة الغمقان */
+    font-weight: bold;
+
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.blog .entry .entry-title a {
+
+    /* لون النص */
+    color: #54616f;
+    /* توقيت الانتقال */
+    transition: 0.3s;
+
+    text-decoration: none;
+}
+
+/* عند وضع الماوس يتغير لون النص */
+.blog .entry .entry-title a:hover {
+    color: #e03a3c;
+}
+
+/* دف الايقونات */
+
+.blog .entry .entry-meta {
+    margin-bottom: 15px;
+    color: #777777;
+}
+
+.blog .entry .entry-meta ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* بدون نقاط */
+    list-style: none;
+    /* في النصف بشكل عمودي */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* توسيع المسافة في الايقونات */
+.blog .entry .entry-meta ul li + li {
+    padding-left: 20px;
+}
+
+.blog .entry .entry-meta i {
+    /* حجم الخط */
+    font-size: 16px;
+    margin-right: 8px;
+    /* المسافة بين الاسطر */
+    line-height: 0;
+}
+
+/* النص الي جنب الايقونة */
+.blog .entry .entry-meta a {
+    /* لون النص */
+    color: #777777;
+    /* حجم النص */
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1;
+    /* ازالة الخط الي تحت الكلام */
+    text-decoration: none;
+}
+
+
+/* نص المقالة */
+
+.blog .entry .entry-content p {
+    /* المسافة بين الاسطر */
+    line-height: 24px;
+    font-size: 15px;
+    color: #777777;
+}
+
+/* العنوان الي داخل المقال */
+
+.blog .entry .entry-content h3 {
+    /* حجم الخط */
+    font-size: 22px;
+    margin-top: 30px;
+    /* غامق */
+    font-weight: bold;
+}
+
+
+/* قسم مقتبس من مصدر آخر */
+
+.blog .entry .entry-content blockquote {
+    overflow: hidden;
+    /* لون الخلفية */
+    background-color: #fafafa;
+    padding: 60px;
+    position: relative;
+    /* النص بالنصف */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* النص الي داخل المقتبس */
+.blog .entry .entry-content blockquote p {
+    /* لون النص */
+    color: #54616f;
+    /* المسافة بين الاسطر */
+    line-height: 1.6;
+    margin-bottom: 0;
+    /* مائل */
+    font-style: italic;
+    /* سمك الخط */
+    font-weight: 500;
+    /* حجم الخط */
+    font-size: 22px;
+}
+
+/* هين بدنا نعمل العمود الي قبل الكلام */
+/* افتر قبل  */
+/* بيفور بعد */
+.blog .entry .entry-content blockquote::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* العرض */
+    width: 3px;
+    /* لون الخلفية */
+    background-color: #54616f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* الايقونات الي اخر المقال */
+.blog .entry .entry-footer {
+    padding-top: 10px;
+    /* اطار من الاعلى */
+    border-top: 1px solid #e6e6e6;
+}
+
+.blog .entry .entry-footer #i {
+    color: #6c757d;
+    display: inline;
+}
+
+/* النص */
+.blog .entry .entry-footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+/* cats */
+.blog .entry .entry-footer .cats {
+    /* بدون نقاط */
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 0;
+    /* حجم الخط */
+    font-size: 14px;
+}
+
+.blog .entry .entry-footer .cats li {
+    display: inline-block;
+}
+
+/* الكلام الي داخل ul */
+.blog .entry .entry-footer .tags {
+    /* بدون نقاط */
+    list-style: none;
+    display: inline;
+    padding: 0;
+    /* حجم الخط */
+    font-size: 14px;
+}
+
+.blog .entry .entry-footer .tags li {
+    /* جيبهم جمب بعض */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* الفاصلة الي بين الكلمات */
+.blog .entry .entry-footer .tags li + li::before {
+    padding-right: 6px;
+    color: #6c757d;
+    content: ",";
+}
+
+/* المؤلف  */
+.blog .blog-author {
+    padding: 20px;
+    margin-bottom: 30px;
+    /* ظل */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* صورة المؤلف */
+.blog .blog-author img {
+    /* عرض الصورة */
+    width: 120px;
+    margin-right: 20px;
+}
+
+/* أسم المؤلف */
+.blog .blog-author h4 {
+    /* درجة السمك */
+    font-weight: 600;
+    /* حجم الخط */
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 0;
+    /* لون النص */
+    color: #5c6571;
+    font-family: sans-serif;
+}
+
+/* وءائل التواصل الاجتماعي */
+.blog .blog-author .social-links {
+    margin: 0 10px 10px 0;
+}
+
+.blog .blog-author .social-links a {
+    color: rgba(17, 17, 17, 0.5);
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+  /* سيرة ذاتية عن المؤلف */
+
+  .blog .blog-author p {
+    font-style: italic;
+    color: #b7b7b7;
+}
+
+/* التعليقات */
+.blog .blog-comments {
+    margin-bottom: 30px;
+}
+
+.blog .blog-comments .comments-count {
+    font-weight: bold;
+}
+
+/* الكومنتات */
+.blog .blog-comments .comment {
+    margin-top: 30px;
+    position: relative;
+}
+
+/* ديف صور الكومنتات */
+.blog .blog-comments .comment .comment-img {
+    /* ازاحة لليمين */
+    margin-right: 14px;
+}
+
+/* صور الكومنتات */
+.blog .blog-comments .comment .comment-img img {
+    /* العرض */
+    width: 60px;
+}
+
+.blog .blog-comments .comment h5 {
+    /* حجم الخط */
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.blog .blog-comments .comment h5 a {
+    /* غامق */
+    font-weight: bold;
+    /* لون النص */
+    color: #444444;
+    text-decoration: none;
+}
+
+/* reply */
+
+.blog .blog-comments .comment h5 .reply {
+    padding-left: 10px;
+    /* لون النص */
+    color: #556270;
+}
+
+/* الوقت */
+.blog .blog-comments .comment time {
+    display: block;
+    /* حجم الخط */
+    font-size: 14px;
+    /* اللون */
+    color: #979daf;
+    margin-bottom: 5px;
+    /* نوع الخط */
+    font-family: sans-serif;
+}
+
+.blog .blog-comments .comment p {
+    font-size: 15px;
+    color: #556270;
+}
+
+.blog .blog-comments .comment.comment-reply {
+    padding-left: 40px;
+}
+
+/* الفورم */
+.blog .blog-comments .reply-form {
+    margin-top: 30px;
+    padding: 30px;
+    /* ظل */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* عنوان الفورم */
+.blog .blog-comments .reply-form h4 {
+    /* غامق */
+    font-weight: bold;
+    /* حجم الخط */
+    font-size: 22px;
+}
+
+/* نص الفورم */
+.blog .blog-comments .reply-form p {
+    font-size: 14px;
+}
+
+/* صناديق الادخال */
+.blog .blog-comments .reply-form input {
+    /* اطار */
+    border-radius: 4px;
+    padding: 10px 10px;
+    /* حجم الخط */
+    font-size: 14px;
+    box-shadow: none;
+}
+
+/* صناديق الادخال */
+.blog .blog-comments .reply-form input:focus,.blog .blog-comments .reply-form textarea:focus {
+    border: #e03a3c 1px solid;
+}
+
+/* الصندوق الكبير */
+.blog .blog-comments .reply-form textarea {
+    /* اطار */
+    border-radius: 4px;
+    padding: 10px 10px;
+    /* حجم الخط */
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.blog .blog-comments .reply-form .form-group {
+    margin-bottom: 25px;
+}
+
+/* الزر */
+.blog .blog-comments .reply-form .btn-primary {
+    /* اطار */
+    border-radius: 4px;
+    padding: 10px 20px;
+    /* ازالة الاطار */
+    border: 0;
+    background-color: #556270;
+    color: white;
+}
+
+/* الشريط الجانبي */
+
+.blog .sidebar {
+    padding: 30px;
+    margin: 0 0 60px 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* عنوان الشريط الجانبي كلمة بحث */
+.blog .sidebar .sidebar-title {
+    /* حجم الخط */
+    font-size: 20px;
+    /* سمك الخط */
+    font-weight: 700;
+
+    padding: 0 0 0 0;
+    margin: 0 0 15px 0;
+    /* لون الخط */
+    color: #66676b;
+    position: relative;
+}
+
+.blog .sidebar .sidebar-item {
+    margin-bottom: 30px;
+}
+
+/* الفورم */
+/* بتحتوي على زر وصندوق بحث */
+.blog .sidebar .search-form form {
+    /* لون الخلفية */
+    background: #fff;
+    /* اطار */
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    position: relative;
+}
+
+/* صندوق البحث */
+.blog .sidebar .search-form form input[type=text] {
+    /* ازالة الاطار */
+    border: 0;
+    padding: 4px;
+    /* اطار منحني */
+    border-radius: 4px;
+    /* العرض */
+    width: calc(100% - 40px);
+}
+
+/* زر البحث */
+.blog .sidebar .search-form form button {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* ازالة الاطار */
+    border: 0;
+    /* لا يوجد لون للخلفية */
+    background: none;
+    /* حجم الخط */
+    font-size: 16px;
+    padding: 0 15px;
+    margin: -1px;
+
+    /* لون للخلفية */
+    background: #e03a3c;
+    /* لون لشكل عدسة البحث */
+    color: #fff;
+    /* مدة الانتقال */
+    transition: 0.3s;
+    /* اظار منحني */
+    border-radius: 0 4px 4px 0;
+    /* المسافة بين الاسطر */
+    line-height: 0;
+}
+
+.blog .sidebar .search-form form button i {
+    line-height: 0;
+}
+
+/* المدونات */
+.blog .sidebar .categories ul {
+    /* ازالة النقاط */
+    list-style: none;
+    padding: 0;
+}
+
+.blog .sidebar .categories ul li + li {
+    padding-top: 10px;
+}
+
+/* النص */
+.blog .sidebar .categories ul a {
+    color: #66676b;
+    text-decoration: none;
+}
+
+/* الارقام */
+
+.blog .sidebar .categories ul a span {
+    padding-left: 5px;
+    color: #aaaaaa;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+/* البوستات */
+
+.blog .sidebar .recent-posts .post-item + .post-item {
+    margin-top: 15px;
+}
+
+/* صور البوستات */
+.blog .sidebar .recent-posts img {
+    /* العرض */
+    width: 80px;
+    float: left;
+}
+
+/* عنوان البوست */
+.blog .sidebar .recent-posts h4 {
+    /* حجم الخط */
+    font-size: 15px;
+    margin-left: 95px;
+    /* غامق */
+    font-weight: bold;
+}
+
+.blog .sidebar .recent-posts h4 a {
+    color: #66676b;
+    text-decoration: none;
+}
+
+/* الوقت */
+.blog .sidebar .recent-posts time {
+    display: block;
+    margin-left: 95px;
+    /* مائل */
+    font-style: italic;
+    /* حجم الخط */
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+
+/* قسم التاغات */
+.blog .sidebar .tags {
+    margin-bottom: -10px;
+}
+
+.blog .sidebar .tags ul {
+    /* ازالة النقاط */
+    list-style: none;
+    padding: 0;
+}
+
+/* هين جاب العناصر جمب بعض */
+.blog .sidebar .tags ul li {
+    display: inline-block;
+}
+
+.blog .sidebar .tags ul a {
+    /* لون النص */
+    color: #aaaaaa;
+    /* حجم النص */
+    font-size: 14px;
+    padding: 6px 5px;
+    margin: 0 6px 8px 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.blog .sidebar .tags ul li:hover {
+    background-color: #e03a3c;
+    color: white;
+    transition: 0.5s;
+}
+
+.blog .sidebar .tags ul a:hover {
+    color: white;
+}
+/* الفوتر */
+/* نهاية الصفحة */
+
+.footer{
+    /* لون النص */
+    color: white;
+
+    /* حجم الخط */
+    font-size: 14px;
+
+    /* لون الخلفية */
+    background: #4a5562;
+}
+
+
+/* الفوتر العلوي */
+.footer .footer-top {
+    padding: 60px 0 30px 0;
+
+    /* لون الخلفية */
+    background: #515d6a;
+}
+
+.footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+/* النص الي داخل الفوتر */
+
+/* عنوان الفوتر الاسم */
+.footer .footer-top .footer-contact h3 {
+
+    /* حجم الخط */
+    font-size: 26px;
+    /* المسافة بين الاسطر */
+    line-height: 1;
+    /*درجة غمقان الخط */
+    font-weight: 700;
+  }
+
+  /* النص الي تحت الاسم */
+
+.footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+}  
+
+
+
+/* وسائل التواصل الاجتماعي */
+.footer .social-links a {
+
+    /* حجم الشكل */
+    font-size: 18px;
+    display: inline-block;
+
+    /* لون الخلفية */
+    background: #636e79;
+
+    /* لون الشكل */
+    color: #fff;
+
+    /* المسافة بين الاسطر */
+    line-height: 1;
+
+
+    padding: 8px 0;
+
+    /* إزاحة لليمين */
+    margin-right: 4px;
+
+    /* إطار */
+    border-radius: 4px;
+
+    text-align: center;
+    
+    /* العرض */
+    width: 36px;
+
+    /* الطول */
+    height: 36px;
+
+    /* مدة الانتقال */
+    transition: 0.3s;
+}
+
+
+.footer .social-links a:hover {
+    background: #e03a3c;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* عنوان اللاينكات */
+.footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* دف اللينكات */
+.footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+/* القائمة */
+
+.footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-links ul a {
+    color: #aaaaaa;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+}
+
+/* تغير لون الكلام عند وضع الماوس عليه */
+
+.footer .footer-top .footer-links ul a:hover{
+    color: white;
+}
+
+
+/* الجزء الرابع من الفوتر  */
+
+/* النص وزر الاشتراك */
+
+
+.footer .footer-newsletter {
+
+    /* حجم الخط */
+    font-size: 15px;
+}
+
+.footer .footer-newsletter h4 {
+    /* حجم الخط */
+    font-size: 16px;
+
+    /* سمك الخط */
+    font-weight: bold;
+
+    position: relative;
+
+    padding-bottom: 12px;
+}
+
+/* الصندوق */
+.footer .footer-newsletter form {
+
+    /* 30 من الاعلى */
+    margin-top: 30px;
+    /* لون الخلفية */
+    background: #fff;
+
+    padding: 5px 10px;
+
+    position: relative;
+    /* إطار */
+    border-radius: 4px;
+    /* الكتابة من اليسار */
+    text-align: left;
+}
+
+
+/* تخصيص نوع الصندوق للنص ايميل */
+.footer .footer-newsletter form input[type=email] {
+    /* لا يوجد اطار */
+    border: 0;
+    padding: 4px 8px;
+    /* العرض */
+    /* الحجم الكلي 100بالمية ناقص 100 بكسل */
+    /* calc تستخدم للدوال الرياضية */
+    width: calc(100% - 100px);
+}
+
+/* الزر */
+
+.footer .footer-newsletter form input[type=submit] {
+    /* يتحرك بحرية */
+    position: absolute;
+    /* من الاعلى 0 */
+    top: 0;
+
+    /* من الجانب الايمن سالب واحد بكسل */
+    right: -1px;
+
+    /* من الاسفل صفر */
+    bottom: 0;
+
+    /* لا يوجد بوردر */
+    border: 0;
+
+    /* لا يوجد لون خلفية */
+    background: none;
+
+    /* حجم الخط */
+    font-size: 16px;
+
+    padding: 0 20px;
+
+    /* لون خلفية بديل */
+    background: #e03a3c;
+
+    /* لون النص */
+    color: #fff;
+
+    /* فترة الانتقال */
+    transition: 0.3s;
+
+    /* إطار  */
+    border-radius: 0 4px 4px 0;
+
+    /* ظل */
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+
